@@ -1,12 +1,12 @@
 
-$font-primary: "FuturaStdMedium", sans-serif;
+$font-primary: "Zilla Slab", serif;
 $font-secondary: "Documenta-Regular", sans-serif;
 $font-secondary-italic: "DocumentaDtlItalic", sans-serif;
 
 body {
   font-family: $font-primary;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.5;
   font-size: 16px;
 }
@@ -24,8 +24,7 @@ h5 {
 }
 
 h1 {
-  font-style: bold;
-  color: $color-blue;
+  color: $color-white;
   position: relative;
   font-size: 6.0rem;
 
@@ -35,29 +34,20 @@ h1 {
 }
 
 h2 {
-  font-style: italic;
-  font-weight: 100;
-  font-family: $font-secondary-italic;
-  color: #FD2629;
-  padding: 0 20vh;
-
-  @include MQ(XS) {
-    font-size: 3.0rem;
-  }
-}
-
-h3 {
-  color: $color-blue;
+  font-family: $font-primary;
+  font-size: 5.0rem;
+  color: $color-black;
 }
 
 p {
   font-size: 1.4rem;
+  font-family: $font-secondary;
 }
 
 a {
   text-decoration: none;
   font-size: 1.4rem;
-  font-family: $font-secondary-italic;
+  font-family: $font-primary;
   cursor: pointer;
 
   &:hover,

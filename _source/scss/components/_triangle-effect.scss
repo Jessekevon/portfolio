@@ -12,11 +12,16 @@ figure {
     transform-origin: 50%;
   }
 
-  .text-wrap {
+  .text-wrap,
+  .social-wrap {
     width: 25vw;
     text-transform: none;
     line-height: 2;
     margin: 0 auto;
+  }
+
+  .social-wrap {
+    display: none;
   }
 
   a {
@@ -24,12 +29,12 @@ figure {
     transition: opacity 0.35s, transform 0.35s;
     transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(0,0,1);
     font-size: 4.5vmin;
-    color: $color-red;
+    color: $color-white;
     text-transform: uppercase;
     display: block;
 
     &:hover, &:focus {
-      color: $color-blue;
+      color: $color-pink;
     }
   }
 
@@ -42,7 +47,7 @@ figure {
       width: 50vmin;
       min-height: 50vmin;
       max-height: 50vmin;
-      border: 5px solid $color-red;
+      border: 5px solid $color-white;
       content: '';
       opacity: 0;
       transition: opacity 0.35s, transform 0.35s;
