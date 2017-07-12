@@ -152,6 +152,14 @@ section {
       &.jugo {
         background-image: url(../img/jugo.png);
       }
+
+      &.iel {
+        background-image: url(../img/iel.png);
+      }
+
+      &.oe {
+        background-image: url(../img/oe.png);
+      }
     }
 
     &:hover {
@@ -219,6 +227,7 @@ section {
     a,
     h4 {
       font-size: 17px;
+      line-height: 32px;
     }
 
     h2,
@@ -228,6 +237,7 @@ section {
 
     h2 {
       color: $color-blue;
+      margin-bottom: 1.0rem;
     }
 
   }
@@ -245,7 +255,7 @@ section {
       background-size: cover;
 
       .gel {
-        background: rgba(0, 0, 0, 0.35);
+        background: rgba(0, 0, 0, 0.25);
       }
     }
   }
