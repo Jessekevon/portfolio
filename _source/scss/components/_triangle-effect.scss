@@ -38,7 +38,8 @@ figure {
       margin-top: 6vh;
     }
 
-    &:hover, &:focus {
+    &:hover, 
+    &:focus {
       color: $color-pink;
     }
   }
@@ -61,7 +62,8 @@ figure {
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     figcaption {
 
       &::before {

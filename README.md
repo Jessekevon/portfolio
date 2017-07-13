@@ -1,3 +1,0 @@
-# lamb
-# lamb
-# lamb
