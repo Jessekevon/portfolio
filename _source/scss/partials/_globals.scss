@@ -4,8 +4,15 @@ body {
 }
 
 body {
-  background: $color-blue;
   font-family: $font-primary;
+}
+
+main {
+  background: $color-blue;
+
+  &.resume {
+    background: $color-white;
+  }
 }
 
 .full-height {
@@ -86,6 +93,16 @@ section {
     height: 100vh;
     flex-direction: column;
 
+    a {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+    }
+
     @include MQ(M) {
       -ms-flex-preferred-size: 33.33333333%;
       flex-basis: 33.33333333%;
@@ -112,7 +129,7 @@ section {
       justify-content: center;
       align-items: center;
       height: 100%;
-      font-size: 40px;
+      font-size: 32px;
       color: $color-black;
       text-align: center;
     }
@@ -121,8 +138,9 @@ section {
       position: relative;
       z-index: 1;
       opacity: 0;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 400;
+      color: $color-white;
     }
 
     .image {
@@ -291,5 +309,16 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+// Resume
+
+.resume {
+  padding: 100px 80px;
+
+  h2 {
+    font-size: 80px;
+  }
 }
 

@@ -33,6 +33,11 @@ figure {
     text-transform: uppercase;
     display: block;
 
+    &.close-social {
+      font-size: 12px;
+      margin-top: 6vh;
+    }
+
     &:hover, &:focus {
       color: $color-pink;
     }
