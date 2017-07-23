@@ -1,27 +1,27 @@
-// .homepage {
-//   &main {
-//     // height: calc(100vh - 50px);
-//     min-height: 100vh;
-//     background-size: cover;
-//     background: $color-yellow;
-//     // background: mix($color-yellow, $color-blue);
+.text-left,
+.text-right {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 17px;
+  color: $color-white;
+  font-style: italic;
+}
 
-//     // background: desaturate($color-yellow, 50%);
-//     // background: complement($color-yellow);
-//     // background: lighten($color-yellow, 5%);
-//     // background: url('http://unsplash.it/1200x800') center center no-repeat;
+.text-left {
+  left: 15px;
+}
 
-//     &:before {
-//       content: '';
-//       position: absolute;
-//       top: 0;
-//       right: 0;
-//       bottom: 0;
-//       left: 0;
-//       background-image: linear-gradient(to top right, $color-yellow, $color-red);
-//       opacity: .15; 
-//     }
-//   }
-// }
+.text-right {
+  right: 15px;
+}
 
-
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  display: inline-block;
+  position: absolute;
+  right: -140px;
+  bottom: 135px;
+}
