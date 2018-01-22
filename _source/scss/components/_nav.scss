@@ -1,0 +1,33 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 20;
+    background: $color-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-100%);
+    opacity: 0;
+    @include global-transition;
+
+    &.is-active {
+        transform: translateY(0);
+        opacity: 1;
+        @include global-transition;
+    }
+
+    a {
+        color: $color-white;
+        font-size: 4.5vmin;
+        text-transform: uppercase;
+
+        &:hover, 
+        &:focus {
+        color: $color-pink;
+        }
+    }
+}
